@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: 'Tenali Ramakrishna', sans-serif;
+}
+
+.header-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url(https://images.pexels.com/photos/335393/pexels-photo-335393.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    color: rgb(230, 230, 230);
+    display: flex;
+    align-items:center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.header-section h1 {
+    margin-left: 5rem;
+    font-size: 4rem;
+}
+
+.section1, .section2 {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.section-img {
+    height: 75vh;
+    margin: 20px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    box-shadow: 1px 1px 3px 2px lightgray;
+}
+
+section p {
+    margin:50px;
+    font-size: 1.5rem;
+}
+
+.section3 p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    font-size: 2rem;
+}
+
+/* for tablets */
+
+/* for mobile phones */
+@media only screen and (max-width:768px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: space-around;
+        justify-content: space-around;
+    }
+
+    section p {
+        font-size: 1.2rem;
+    }
+
+    .section-img {
+        height: 50vh;
+    }
+
+    .section1 {
+        flex-direction: column-reverse;
+    }
+}
+
+/* for small phones */
+@media only screen and (max-width:375px) {
+    
+   .header-section h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin: auto;
+    }
+
+    .section1, .section2 {
+        padding: 25px;
+    }
+    
+    section p {
+        margin: 0;
+        padding: 0;
+        font-size: 1.1rem;
+    }
+
+    .section3 p {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+}
